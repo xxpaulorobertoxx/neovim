@@ -14,7 +14,6 @@ function M.setup()
   require('config.setups.blame').setup()
   require('config.setups.comment').setup()
   require('config.setups.conform').setup()
-  require('config.setups.codecompanion').setup()
 
   -- LSP e autocompletion
   require('config.setups.lsp').setup()
