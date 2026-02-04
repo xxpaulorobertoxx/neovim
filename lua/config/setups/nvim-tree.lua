@@ -6,7 +6,7 @@ function M.setup()
       sorter = "case_sensitive",
     },
     filters = {
-      dotfiles = false,
+      dotfiles = true,
       git_ignored = true,
       custom = { "^%.git$", "^%.github$" },
       exclude = { vim.fn.stdpath("config") .. "/lua/custom" },
