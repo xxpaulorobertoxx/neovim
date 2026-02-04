@@ -12,7 +12,6 @@ function M.setup()
     vim.o.termguicolors = true
     vim.o.background = "dark"
     vim.o.expandtab = true
-    vim.opt.laststatus = 3
 
     vim.opt.list = true
     vim.opt.listchars:append("space:.")
@@ -29,7 +28,7 @@ function M.setup()
     vim.opt.softtabstop = 4
     vim.opt.tabstop = 4
     vim.opt.shiftwidth = 4
-    vim.opt.mouse = "a"
+    vim.opt.mouse = "n"
     vim.opt.syntax = "on"
     vim.opt.wrap = false
     vim.opt.termguicolors = true

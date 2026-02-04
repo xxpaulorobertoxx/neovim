@@ -14,13 +14,12 @@ function M.setup()
   require('config.setups.blame').setup()
   require('config.setups.comment').setup()
   require('config.setups.conform').setup()
+  require('config.setups.copilot').setup()
+  require('config.setups.codecompanion').setup()
 
   -- LSP e autocompletion
   require('config.setups.lsp').setup()
   require('config.setups.cmp').setup()
-
-  -- Debug
-  require('config.setups.dap').setup()
 end
 
 return M

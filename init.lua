@@ -53,44 +53,17 @@ require('packer').startup(function(use)
   use("akinsho/bufferline.nvim")
   use 'nvim-tree/nvim-web-devicons' -- or use 'echasnovski/mini.icons'
 
-  use 'mfussenegger/nvim-dap'
-  use {
-    'rcarriga/nvim-dap-ui',
-    requires = {'nvim-neotest/nvim-nio'}
-  }
   use 'nvim-tree/nvim-tree.lua'
-  use 'leoluz/nvim-dap-go'
-  use 'mfussenegger/nvim-dap-python'
-
   use 'MunifTanjim/nui.nvim'
   use 'MeanderingProgrammer/render-markdown.nvim'
-
-  -- Optional dependencies
-  
-  use 'HakonHarnes/img-clip.nvim'
   use 'zbirenbaum/copilot.lua'
-  use 'stevearc/dressing.nvim' -- for enhanced input UI
-  use 'folke/snacks.nvim' -- for modern input UI
-
-  -- Avante.nvim with build process
-  use {
-    'yetone/avante.nvim',
-    branch = 'main',
-    run = 'make',
-    config = function()
-      require('avante').setup({
-        -- sua configuração aqui
-      })
-    end
-  }
+  use 'olimorris/codecompanion.nvim'
 
   use {
     "ravitemer/mcphub.nvim",
     run = "npm install -g mcp-hub@latest",
     config = function()
-      require("mcphub").setup({
-        -- sua configuração aqui
-      })
+      require("mcphub").setup({})
     end
   }
 

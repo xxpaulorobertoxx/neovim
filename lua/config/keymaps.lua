@@ -26,6 +26,11 @@ function M.setup()
   vim.keymap.set('n', '<Leader>db', vim.diagnostic.goto_prev, { desc = 'Ir para diagnóstico anterior' })
   vim.keymap.set('n', '<Leader>dp', vim.diagnostic.goto_next, { desc = 'Ir para próximo diagnóstico' })
 
+  vim.keymap.set('n', '<Leader>ac', ':CodeCompanionChat<CR>', { silent = true, desc = 'Abrir chat (CodeCompanion)' })
+  vim.keymap.set('n', '<Leader>ai', ':CodeCompanion<CR>', { silent = true, desc = 'Prompt inline (CodeCompanion)' })
+  vim.keymap.set('x', '<Leader>ai', ':CodeCompanion<CR>', { silent = true, desc = 'Prompt inline (CodeCompanion)' })
+  vim.keymap.set('n', '<Leader>aa', ':CodeCompanionActions<CR>', { silent = true, desc = 'Ações (CodeCompanion)' })
+
   vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', { silent = true, desc = 'Próxima aba' })
   vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { silent = true, desc = 'Aba anterior' })
   vim.keymap.set('n', '<Leader>x', ':bdelete<CR>', { silent = true, desc = 'Fechar aba atual' })

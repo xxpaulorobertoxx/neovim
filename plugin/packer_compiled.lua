@@ -79,12 +79,6 @@ _G.packer_plugins = {
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["avante.nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vavante\frequire\0" },
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/avante.nvim",
-    url = "https://github.com/yetone/avante.nvim"
-  },
   ["blame.nvim"] = {
     loaded = true,
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/blame.nvim",
@@ -110,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["codecompanion.nvim"] = {
+    loaded = true,
+    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/codecompanion.nvim",
+    url = "https://github.com/olimorris/codecompanion.nvim"
+  },
   ["conform.nvim"] = {
     loaded = true,
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/conform.nvim",
@@ -119,11 +118,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/copilot.lua",
     url = "https://github.com/zbirenbaum/copilot.lua"
-  },
-  ["dressing.nvim"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/dressing.nvim",
-    url = "https://github.com/stevearc/dressing.nvim"
   },
   ["editorconfig-vim"] = {
     loaded = true,
@@ -160,11 +154,6 @@ _G.packer_plugins = {
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/hierarchy-tree-go.nvim",
     url = "https://github.com/crusj/hierarchy-tree-go.nvim"
   },
-  ["img-clip.nvim"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/img-clip.nvim",
-    url = "https://github.com/HakonHarnes/img-clip.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -179,6 +168,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["mcphub.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vmcphub\frequire\0" },
+    loaded = true,
+    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/mcphub.nvim",
+    url = "https://github.com/ravitemer/mcphub.nvim"
   },
   ["nordic.nvim"] = {
     loaded = true,
@@ -205,35 +200,10 @@ _G.packer_plugins = {
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-go"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
-    url = "https://github.com/leoluz/nvim-dap-go"
-  },
-  ["nvim-dap-python"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
-    url = "https://github.com/mfussenegger/nvim-dap-python"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-nio"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/nvim-nio",
-    url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-scrollbar"] = {
     loaded = true,
@@ -274,11 +244,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/rustaceanvim",
     url = "https://github.com/mrcjkb/rustaceanvim"
-  },
-  ["snacks.nvim"] = {
-    loaded = true,
-    path = "/Users/paulo/.local/share/nvim/site/pack/packer/start/snacks.nvim",
-    url = "https://github.com/folke/snacks.nvim"
   },
   tagbar = {
     loaded = true,
@@ -323,10 +288,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: avante.nvim
-time([[Config for avante.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vavante\frequire\0", "config", "avante.nvim")
-time([[Config for avante.nvim]], false)
+-- Config for: mcphub.nvim
+time([[Config for mcphub.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vmcphub\frequire\0", "config", "mcphub.nvim")
+time([[Config for mcphub.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
