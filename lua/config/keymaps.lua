@@ -9,7 +9,7 @@ function M.setup()
   vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle NvimTree' })
   vim.keymap.set('n', '<Leader>e', ':NvimTreeFocus<CR>', { silent = true, desc = 'Focus NvimTree' })
   vim.keymap.set('n', '<Leader>w', '<C-w>w', { silent = true, desc = 'Alternar entre janelas' })
-
+  
   vim.keymap.set('n', '<Leader>b', function() require('dap').toggle_breakpoint() end)
   vim.keymap.set('n', '<Leader>t', ':TagbarToggle<CR>', { silent = true })
 

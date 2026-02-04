@@ -14,7 +14,7 @@ function M.setup()
       keymap = {
         accept = '<C-l>',
         next = '<C-]>',
-        prev = '<C-[>',
+        prev = '<C-k>',
         dismiss = '<C-\\>',
       },
     },
