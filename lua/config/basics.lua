@@ -28,7 +28,7 @@ function M.setup()
     vim.opt.softtabstop = 4
     vim.opt.tabstop = 4
     vim.opt.shiftwidth = 4
-    vim.opt.mouse = "n"
+    vim.opt.mouse = "a"
     vim.opt.syntax = "on"
     vim.opt.wrap = false
     vim.opt.termguicolors = true

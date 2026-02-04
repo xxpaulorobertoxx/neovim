@@ -25,6 +25,9 @@ require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'L3MON4D3/LuaSnip'
+  use 'rafamadriz/friendly-snippets'
   use("sheerun/vim-polyglot")
   use("lewis6991/gitsigns.nvim")
   use("sbdchd/vim-run")
@@ -49,6 +52,9 @@ require('packer').startup(function(use)
   use("FabijanZulj/blame.nvim")
   use("nvim-telescope/telescope.nvim")
   use("nvim-lua/plenary.nvim")
+  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
+  use("folke/trouble.nvim")
+  use("stevearc/dressing.nvim")
   use("stevearc/conform.nvim")
   use("akinsho/bufferline.nvim")
   use 'nvim-tree/nvim-web-devicons' -- or use 'echasnovski/mini.icons'

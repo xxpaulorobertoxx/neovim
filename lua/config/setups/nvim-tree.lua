@@ -5,26 +5,10 @@ function M.setup()
     sort = {
       sorter = "case_sensitive",
     },
-    view = {
-      width = 60,
-      adaptive_size = true
-    },
-    renderer = {
-      group_empty = true,
-    },
-    filters = {
-      dotfiles = true,
-    },
-  })
-
-  vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = function()
-    require("nvim-tree.api").tree.open()
-  end})
-
-  require("nvim-tree").setup({
     filters = {
       dotfiles = false,
       git_ignored = true,
+      custom = { "^%.git$", "^%.github$" },
       exclude = { vim.fn.stdpath("config") .. "/lua/custom" },
     },
     disable_netrw = true,
@@ -66,6 +50,7 @@ function M.setup()
       },
     },
     renderer = {
+      group_empty = true,
       root_folder_label = false,
       highlight_git = true,
       highlight_opened_files = "none",
@@ -113,6 +98,10 @@ function M.setup()
       },
     },
   })
+
+  vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = function()
+    require("nvim-tree.api").tree.open()
+  end})
 end
 
 return M

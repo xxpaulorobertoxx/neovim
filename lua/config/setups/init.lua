@@ -16,6 +16,10 @@ function M.setup()
   require('config.setups.conform').setup()
   require('config.setups.copilot').setup()
   require('config.setups.codecompanion').setup()
+  require('config.setups.telescope').setup()
+  require('config.setups.trouble').setup()
+  require('config.setups.luasnip').setup()
+  require('config.setups.dressing').setup()
 
   -- LSP e autocompletion
   require('config.setups.lsp').setup()
