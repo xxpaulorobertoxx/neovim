@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup()
-  require("nvim-treesitter.configs").setup({
+  require("nvim-treesitter.config").setup({
     ensure_installed = {
       "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline",
       "python", "ruby", "javascript", "arduino", "awk", "c_sharp", "cmake",
