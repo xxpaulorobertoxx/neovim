@@ -18,7 +18,7 @@ function M.setup()
     },
     display = {
       chat = {
-        window = { layout = 'vertical', width = 0.4 },
+        window = { layout = 'vertical', width = 0.4, position = 'right' },
         start_in_insert_mode = true,
       },
     },

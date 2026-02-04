@@ -38,9 +38,9 @@ function M.setup()
       offsets = {
         {
           filetype = "NvimTree",
-          text = "File Explorer",
+          text = "",
           text_align = "left",
-          separator = true
+          separator = false
         }
       },
       color_icons = false,
