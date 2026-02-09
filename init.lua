@@ -73,7 +73,7 @@ require('packer').startup(function(use)
     end
   }
 
-  use "cademichael/gotest.nvim"
+  use "vim-test/vim-test"
 
   if packer_bootstrap then
     require('packer').sync()
